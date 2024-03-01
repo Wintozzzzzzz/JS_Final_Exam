@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="./red.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="main">Radisson RED Tbilisi</h1>
+    </div>
+    <div>
+        <button class="return-button" onclick="returnHome()">Home Page</button>
+    </div>  
+    <div class="hotel-slider">
+        <div class="slide">
+            <img src="./StandardRoom.jpg" alt="Standard Room">
+            <h3 class="roomname">Standard Room</h3>
+            <p class="desctext">The air-conditioned double room features a TV with satellite channels, a tea and coffee maker, a wardrobe, a safe deposit box as well as garden views. The unit has 1 bed.</p>
+                <br>
+            <p><em>Price: $120 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Standard Room', 120)">Reserve</button>
+        </div>
+        <div class="slide">
+            <img src="./SuperiorRoom.jpg" alt="Superior Room">
+            <h3 class="roomname">Superior Room</h3>
+            <p class="desctext">The spacious air-conditioned double room offers a TV with satellite channels, a tea and coffee maker, a seating area, a wardrobe as well as garden views. The unit has 1 bed.</p>
+            <br>
+            <p><em>Price: $131 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Superior Room', 131)">Reserve</button>
+        </div>
+        <div class="slide">
+                <img src="./PremiumRoom.jpg" alt="Premium Room">
+                <h3 class="roomname">Premium Room</h3>
+                <p class="desctext">The spacious air-conditioned double room offers a TV with satellite channels, a tea and coffee maker, a seating area, a wardrobe as well as garden views.</p>
+                <br>
+                <p><em>Price: $155 per night</em></p>
+                <button class="booking-button" onclick="reserveRoom('Premium Room', 155)">Reserve</button>
+        </div>
+    </div>
+        
+    
+    <script src="/script.js"></script>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.709290083974!2d44.79780807655494!3d41.70521107622036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446f16b261f9a1%3A0xf495e6d86aa1a2f2!2sRadisson%20RED%20Tbilisi!5e0!3m2!1sen!2sge!4v1708948810024!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>All rights reserved &copy; 2024 </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+body {
+    background: linear-gradient(to right, #eeaeca, #94bbe9);
+}
+/* ბანერის სტილი */
+.banner {
+    background: linear-gradient(to right, #eeaeca, #94bbe9);
+    text-align: center;
+    padding: 20px;
+}
+.main {
+    font-family: "Playfair Display", serif;
+    color: #fff;
+}
+
+/* სლაიდერი სტილი */
+.hotel-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 572px;
+}
+
+.slide img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.slide h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.slide p {
+    margin: 5px 0;
+}
+
+/*სლაიდერი ანიმაციის სტილი*/
+.slide-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.roomname {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+.desctext {
+    font-family: "Quicksand", sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+}
+.booking-button {
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #2980b9;
+}
+.return-button {
+    background-color: #3498db; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    float: right;
+    position: fixed;
+}
+
+/* ანიმაციის სტილი */
+.return-button {
+    animation-name: example;
+    animation-duration: 1s;
+}
+.footer {
+    background: linear-gradient(to right, #eeaeca, #94bbe9);
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 99%;
+}
+
+/* დესკტოპ ვერსია */
+@media (min-width: 1030px) {
+    .banner {
+        padding: 40px;
+    }
+
+    .hotel-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 10px;
+    }
+
+    .slide h3 {
+        font-size: 24px;
+    }
+}
+/* პლანშეტის ვერსია */
+@media (min-width: 1024px) {
+    .banner {
+        padding: 40px;
+    }
+
+    .hotel-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 10px;
+    }
+
+    .slide h3 {
+        font-size: 24px;
+    }
+    .return-button {
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+    
+}
+/* Ipad Mini-ს ვერსია */
+@media (max-width: 768px) {
+    .banner {
+        padding: 20px;
+    }
+
+    .hotel-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .slide h3 {
+        font-size: 20px;
+    }
+    .footer {
+        position: relative;
+    }
+}
+
+/* მობილური ტელეფონების ვერსია */
+@media (max-width: 480px) {
+    .banner {
+        padding: 20px;
+    }
+
+    .hotel-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .slide h3 {
+        font-size: 20px;
+    }
+    
+    .return-button {
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .footer {
+        position: relative;
+    }
+}
+@keyframes example {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}

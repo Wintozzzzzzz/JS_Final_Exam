@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="./aqua.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="main">Hotel Aqua Liberty</h1>
+    </div>
+    <div>
+        <button class="return-button" onclick="returnHome()">Home Page</button>
+    </div>   
+    <div class="hotel-slider">
+        <div class="slide">
+            <img src="./BudgetDoubleRoom.jpg" alt="Budget Double Room">
+            <h3 class="roomname">Budget Double Room</h3>
+            <p class="desctext">This Double room does not have a real window it has an decorative window, This room features a seating area, flat-screen TV, mini-bar, air conditioning and ventilation.</p>
+                <br>
+            <p><em>Price: $226 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+        <div class="slide">
+            <img src="./DeluxeTwinRoom.jpg" alt="Deluxe Twin Room">
+            <h3 class="roomname">Deluxe Twin Room</h3>
+            <p class="desctext">This room has a real window with city view, as well as flat-screen TV, mini-bar, air conditioning and ventilation.</p>
+            <br>
+            <p><em>Price: $273 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+        <div class="slide">
+                <img src="./SuperiorDoubleRoom.jpg" alt="Superior Double Room">
+                <h3 class="roomname">Superior Double Room</h3>
+                <p class="desctext">This room has a real window with city view, as well as massage chair, seating area, flat-screen TV, mini-bar, air conditioning and ventilation.</p>
+                <br>
+                <p><em>Price: $361 per night</em></p>
+                <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+    </div>
+        
+    
+    <script src="/script.js"></script>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.2046538610516!2d44.79759219031735!3d41.69451750280081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cef9cd4a4e9%3A0xfc5e11f366f3c3c4!2sAqua%20Liberty%20Hotel!5e0!3m2!1sen!2sge!4v1708951172372!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>All rights reserved &copy; 2024 </p>
+    </footer>
+</body>
+</html>

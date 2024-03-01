@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="./abano.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="main">Abanotubani Boutique Hotel</h1>
+    </div>
+    <div>
+        <button class="return-button" onclick="returnHome()">Home Page</button>
+    </div>   
+    <div class="hotel-slider">
+        <div class="slide">
+            <img src="./LargeDoubleRoom.jpg" alt="Large Double Room">
+            <h3 class="roomname">Large Double Room</h3>
+            <p class="desctext">Featuring free toiletries and bathrobes, this double room includes a private bathroom with a walk-in shower, a hairdryer and slippers. The spacious air-conditioned double room features a flat-screen TV with cable channels, a private entrance, soundproof walls, a mini-bar as well as city views.</p>
+                <br>
+            <p><em>Price: $134 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+        <div class="slide">
+            <img src="./DoubleRoomwithTerrace.jpg" alt="Double Room with Terrace">
+            <h3 class="roomname">Double Room with Terrace</h3><br>
+            <p class="desctext">The spacious double room offers air conditioning, a private entrance, a terrace with city views as well as a private bathroom featuring a walk-in shower. The unit offers 1 bed.</p>
+            <br>
+            <p><em>Price: $151 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+        <div class="slide">
+                <img src="./JuniorSuitewithTerrace.jpg" alt="Junior Suite with Terrace">
+                <h3 class="roomname">Junior Suite with Terrace</h3>
+                <p class="desctext">This suite has a terrace with an old city view.</p>
+                <br>
+                <p><em>Price: $217 per night</em></p>
+                <button class="booking-button" onclick="reserveRoom('Twin Room', 219)">Reserve</button>
+        </div>
+    </div>
+        
+    
+         
+    <script src="/script.js"></script>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11918.026285720487!2d44.80085457273371!3d41.68799881438589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf7aa558fcd%3A0xb043f034f1ea1a48!2sHotel%20Abanotubani!5e0!3m2!1sen!2sge!4v1708950822131!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>All rights reserved &copy; 2024 </p>
+    </footer>
+</body>
+</html>

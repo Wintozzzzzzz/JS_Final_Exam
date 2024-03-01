@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="./passport.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="main">Hotel Passport Tbilisi</h1>
+    </div>
+    <div>
+        <button class="return-button" onclick="returnHome()">Home Page</button>
+    </div>
+    <div class="hotel-slider">
+        <div class="slide">
+            <img src="./StandardDouble.jpg" alt="Standard Double">
+            <h3 class="roomname">Standard Double</h3>
+            <p class="desctext">Offering free toiletries and bathrobes, this twin/double room includes a private bathroom with a walk-in shower, a bidet and a hairdryer. The air-conditioned twin/double room offers a flat-screen TV with satellite channels, a private entrance, soundproof walls, a mini-bar as well as mountain views.</p>
+                <br>
+            <p><em>Price: $92 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Standard Double', 92)">Reserve</button>
+        </div>
+        <div class="slide">
+            <img src="./SuitewithBalcony.jpg" alt="Suite with Balcony">
+            <h3 class="roomname">Suite with Balcony</h3>
+            <p class="desctext">Featuring a private entrance, this air-conditioned suite is consisted of of 1 living room, 1 separate bedroom and 1 bathroom with a walk-in shower and a bidet. Boasting a terrace with mountain views, this suite also offers soundproof walls and a flat-screen TV with satellite channels.</p>
+            <br>
+            <p><em>Price: $129 per night</em></p>
+            <button class="booking-button" onclick="reserveRoom('Suite with Balcony', 129)">Reserve</button>
+        </div>
+        <div class="slide">
+                <img src="./SuperiorSuite.jpg" alt="Superior Suite">
+                <h3 class="roomname">Superior Suite</h3>
+                <p class="desctext">Boasting a private entrance, this air-conditioned suite includes 1 living room, 1 separate bedroom and 1 bathroom with a walk-in shower and a bidet. The spacious suite offers a flat-screen TV with satellite channels, soundproof walls, a mini-bar, a tea and coffee maker as well as mountain views.</p>
+                <br>
+                <p><em>Price: $159 per night</em></p>
+                <button class="booking-button" onclick="reserveRoom('Superior Suite', 159)">Reserve</button>
+        </div>
+    </div>
+        
+    
+    <script src="/script.js"></script>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.0686457037627!2d44.8079811765547!3d41.697453776704414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dd1eabeb003%3A0x18f02d21283c7f98!2sHotel%20Passport%20Tbilisi!5e0!3m2!1sen!2sge!4v1708951394610!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>All rights reserved &copy; 2024 </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carbooking.css">
+    <title>Booking Car Service</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="main">Car Booking Page!</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HotelPage/hotel.html">Hotel Booking</a></li>
+                <li><a href="../ContactPage/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="car-container">
+        <div class="car">
+            <img src="./img/OpelCorsa.png" alt="Opel Corsa">
+            <h2 class="carname">Opel Corsa</h2>
+            <p class="cartext">Rate: 8.9</p>
+            <p class="cartext">Price per day: $40.04</p>
+            <button class="btn" onclick="showPopup(40.04)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/ToyotaAygo" alt="Toyota Aygo">
+            <h2 class="carname">Toyota Aygo</h2>
+            <p class="cartext">Rate: 7.9</p>
+            <p class="cartext">Price per day: $45.28</p>
+            <button class="btn" onclick="showPopup(45.28)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/SuzukiSX4S-Cross.jpg" alt="Suzuki SX4 S-Cross">
+            <h2 class="carname">Suzuki SX4 S-Cross</h2>
+            <p class="cartext">Rate: 8.4</p>
+            <p class="cartext">Price per day: $46.30</p>
+            <button class="btn" onclick="showPopup(46.30)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/ToyotaC-HR.jpg" alt="Toyota C-HR">
+            <h2 class="carname">Toyota C-HR</h2>
+            <p class="cartext">Rate: 9.2</p>
+            <p class="cartext">Price per day: $48.30</p>
+            <button class="btn" onclick="showPopup(48.30)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/SkodaOctavia.jpg" alt="Skoda Octavia">
+            <h2 class="carname">Skoda Octavia</h2>
+            <p class="cartext">Rate: 8.7</p>
+            <p class="cartext">Price per day: $62.47</p>
+            <button class="btn" onclick="showPopup(67.42)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/CupraFormentor.jpg" alt="Cupra Formentor">
+            <h2 class="carname">Cupra Formentor</h2>
+            <p class="cartext">Rate: 9.0</p>
+            <p class="cartext">Price per day: $149.42</p>
+            <button class="btn" onclick="showPopup(149.42)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/SeatAteca.jpg" alt="Seat Ateca">
+            <h2 class="carname">Seat Ateca</h2>
+            <p class="cartext">Rate: 9.3</p>
+            <p class="cartext">Price per day: $156.90</p>
+            <button class="btn" onclick="showPopup(156.90)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/Peugeot308.jpg" alt="Peugeot 308">
+            <h2 class="carname">Peugeot 308</h2>
+            <p class="cartext">Rate: 9.0</p>
+            <p class="cartext">Price per day: $162.74</p>
+            <button class="btn" onclick="showPopup(162.74)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/SkodaKodiaq.jpg" alt="Skoda Kodiaq">
+            <h2 class="carname">Skoda Kodiaq</h2>
+            <p class="cartext">Rate: 8.8</p>
+            <p class="cartext">Price per day: $267.42</p>
+            <button class="btn" onclick="showPopup(267.42)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/BMW3Series.jpg" alt="BMW 3 Series">
+            <h2 class="carname">BMW 3 Series</h2>
+            <p class="cartext">Rate: 9.5</p>
+            <p class="cartext">Price per day: $292.48</p>
+            <button class="btn" onclick="showPopup(292.48)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/Mazda6.jpg" alt="Mazda 6">
+            <h2 class="carname">Mazda 6</h2>
+            <p class="cartext">Rate: 9.4</p>
+            <p class="cartext">Price per day: $279.65</p>
+            <button class="btn" onclick="showPopup(279.65)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/MercedesE-Class.jpg" alt="Mercedes E-Class">
+            <h2 class="carname">Mercedes E-Class</h2>
+            <p class="cartext">Rate: 9.8</p>
+            <p class="cartext">Price per day: $365.58</p>
+            <button class="btn" onclick="showPopup(365.58)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/SeatAlhambra.jpg" alt="Seat Alhambra">
+            <h2 class="carname">Seat Alhambra</h2>
+            <p class="cartext">Rate: 8.6</p>
+            <p class="cartext">Price per day: $309.92</p>
+            <button class="btn" onclick="showPopup(309.92)">Book Now</button>
+        </div>
+        <div class="car">
+            <img src="./img/BMWX1.jpg" alt="BMW X1">
+            <h2 class="carname">BMW X1</h2>
+            <p class="cartext">Rate: 9.7</p>
+            <p class="cartext">Price per day: $383.86</p>
+            <button class="btn" onclick="showPopup(383.86)">Book Now</button>
+        </div>
+
+        
+    </div>
+    
+    <div class="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="popup">
+        <h2>Booking Details</h2>
+        <form id="booking-form" onsubmit="return false;">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" min="2024-03-01" required>
+            <p id="price">Price: $0</p>
+            <button onclick="closePopup()">Close</button>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </form>
+    </div>
+    <script src="../script.js"></script>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.5309470049615!2d44.77043567655513!3d41.70906047598026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440ccd51becc13%3A0xb03271de1e1b1e6!2s11%20Ilia%20Chavchavadze%20Avenue%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1708935853385!5m2!1sen!2sge" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>All rights reserved &copy; 2024 </p>
+    </footer>
+</body>
+</html>
