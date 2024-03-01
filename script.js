@@ -25,18 +25,7 @@ setTimeout(() => {
     });
 }, 100);
 
-    // თარიღის ფუნქცია
-$(function() {
-    $('#checkInDate').datepicker({
-        dateFormat: 'yyyy-mm-dd'
-    });
-    $('#checkOutDate').datepicker({
-        dateFormat: 'yyyy-mm-dd'
-    });
-});
-
-
-
+    // ოთახის რეზერვაციის ფუნქცია
 function reserveRoom(roomType, price) {
     var name = prompt("Enter your name:");
     var email = prompt("Enter your email:");
@@ -111,12 +100,6 @@ function calculatePrice(selectedDate, price) {
     var startDate = new Date(selectedDate);
     var today = new Date();
 
-    // Если выбранная дата меньше сегодняшней, сообщаем об ошибке
-    if (startDate <= today) {
-        alert('Please choose next day!');
-        return 0;
-    }
-
     // თარიღებს შორი მილიწამების სხვაობა
     var timeDiff = Math.abs(startDate.getTime() - today.getTime());
 
@@ -129,6 +112,6 @@ function calculatePrice(selectedDate, price) {
     return totalPrice;
 }
 
- // Change image every 2 seconds
+ 
 
 
